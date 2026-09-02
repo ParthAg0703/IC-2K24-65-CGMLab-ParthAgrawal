@@ -1,0 +1,25 @@
+#include <graphics.h>
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, "");
+    line(100, 100, 300, 100);
+    outtextxy(170, 70, "LINE");
+    
+    circle(200, 250, 70);
+    outtextxy(170, 340, "CIRCLE");
+    
+    rectangle(400, 100, 600, 250);
+    outtextxy(460, 270, "RECTANGLE");
+    
+    line(450, 350, 550, 450);
+    line(550, 450, 350, 450);
+    line(350, 450, 450, 350);
+    outtextxy(410, 470, "TRIANGLE");
+    getch();
+    closegraph();
+    return 0;
+}
